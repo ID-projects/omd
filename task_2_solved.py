@@ -22,15 +22,15 @@ queries = [
 ]
 
 counter = len(queries)
-print(counter)
+print(f"Всего поисковых запросов: {counter}")
 count_dict = {}
 for query in queries:
     count_dict[query] = count_dict.get(query, 0) + 1
-print(count_dict)
+print(f"Количество каждого запроса: {count_dict}")
 count_dict_max = max(count_dict, key=count_dict.get)
-print(count_dict_max)
+print(f"Чаще всего вводили запрос: «{count_dict_max}»")
 share_of_search = count_dict[count_dict_max] / sum(count_dict.values())
-print(share_of_search)
+print(f"Доля самого частого запроса: {share_of_search:.1%}")
 for key, value in count_dict.items():
     if value == 1:
-        print(key)
+        print(f"Запрос, введённый один раз: «{key}»")

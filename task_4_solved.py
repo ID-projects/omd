@@ -32,7 +32,7 @@ days_with_many_returns = {
     if item["returns"] / item["orders"] > 0.2
 }
 
-print(days_with_many_returns)
-print(average_revenue_by_day)
-print(revenue_sum)
-print(day_with_max_revenue["day"])
+print(f"Дни, когда возвратов больше 20%: {days_with_many_returns}")
+print(f"Средняя выручка на заказ по дням: {average_revenue_by_day}")
+print(f"Общая выручка за неделю: {revenue_sum}")
+print(f"День с самой большой выручкой: {day_with_max_revenue['day']}")
