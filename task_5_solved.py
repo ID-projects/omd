@@ -72,9 +72,8 @@ reviews_1_2_count = sum(
     1 for review in reviews_corrected if review["stars"] in [1, 2]
 )
 bad_reviews_share = reviews_1_2_count / reviews_number
-print(result)
-print(product_with_min_average)
-print(reviews_number)
-print(reviews_1_2_count)
-print(bad_reviews_share)
-# print(avg_mark_by_product)
+print(f"Средние оценки по товарам: {avg_mark_by_product}")
+print(f"Худший товар по средней оценке: {product_with_min_average}")
+print(f"Всего отзывов: {reviews_number}")
+print(f"Количество отзывов на 1 или 2 звезды: {reviews_1_2_count}")
+print(f"Доля отзывов на 1 или 2 звезды: {bad_reviews_share:.1%}")

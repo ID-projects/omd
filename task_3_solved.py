@@ -25,26 +25,26 @@ returned_sum = sum(
     for order in orders
     if order["status"] == "returned"
 )
-print(returned_sum)
+print(f"Сумма возвратов: {returned_sum}")
 
 returners_list = [
     order["buyer"]
     for order in orders
     if order["status"] == "returned"
 ]
-print(returners_list)
+print(f"Покупатели, вернувшие заказ: {returners_list}")
 returned_count = len(returners_list)
-print(returned_count)
+print(f"Количество возвращённых заказов: {returned_count}")
 
 delivered_count = sum(
     1 for order in orders if order["status"] == "delivered"
 )
-print(delivered_count)
+print(f"Количество доставленных заказов: {delivered_count}")
 delivered_sum = sum(
     order["amount"]
     for order in orders
     if order["status"] == "delivered"
 )
-print(delivered_sum)
+print(f"Сумма доставленных заказов: {delivered_sum}")
 avg_delivered_sum = delivered_sum / delivered_count
-print(avg_delivered_sum)
+print(f"Средний чек доставленного заказа: {avg_delivered_sum}")
