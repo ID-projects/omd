@@ -20,15 +20,15 @@
 
 ## Запуск
 
-Поместите `Corp_Summary.csv` рядом с `Solution.py` и запустите:
+Поместите `Corp_Summary.csv` рядом с `solution_homework_2.py` и запустите:
 
 ```bash
-python Solution.py
+python solution_homework_2.py
 ```
 
 По умолчанию формируется отчёт № 3 — сводка по департаментам в
 `Department_summary.csv`. Чтобы выбрать другой отчёт, измените аргумент вызова
-`create_report()` в конце `Solution.py`:
+`create_report()` в конце `solution_homework_2.py`:
 
 ```python
 create_report(1)  # Иерархия департаментов и команд
